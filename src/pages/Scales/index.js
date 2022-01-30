@@ -4,11 +4,9 @@ const Scales = () => {
 
     return (
         <Layout>
-            <div className="container mx-auto">
                 <span>
                     Scales
                 </span>
-            </div>
         </Layout>
 
     )

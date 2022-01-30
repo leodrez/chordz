@@ -1,15 +1,15 @@
 
 import Layout from '../../layout/index'
-const Saved = () => {
+const Chord = () => {
 
     return (
         <Layout>
                 <span>
-                    Saved
+                    Chord
                 </span>
         </Layout>
 
     )
 }
 
-export default Saved
+export default Chord

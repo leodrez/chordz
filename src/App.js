@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Saved from './pages/Saved';
 import Scales from './pages/Scales';
 import Chords from './pages/Chords';
+import Chord from './pages/Chord';
 
 function App() {
 
@@ -23,17 +24,22 @@ function App() {
       />
 
       <Route
+        exact
+        path="/chords/:chordId"
+        element={<Chord />}
+      />
+      <Route
         path="/scales"
         exact
         element={<Scales />}
       />
-      
+
       <Route
         path="/saved"
         exact
         element={<Saved />}
       />
-    
+
     </Routes>
 
   )

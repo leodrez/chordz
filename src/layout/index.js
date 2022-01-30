@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import Breadcrumb from "./breadcrumb"
 
 const Layout = (props) => {
 
@@ -53,7 +54,16 @@ const Layout = (props) => {
                     </div>
                 </div>
 
-                {children}
+
+                <div className="container mx-auto">
+
+                    <div className="mb-10">
+                        <Breadcrumb />
+                    </div>
+
+                    {children}
+
+                </div>
             </div>
 
             <div className="drawer-side">

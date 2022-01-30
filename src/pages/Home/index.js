@@ -43,7 +43,7 @@ const Home = () => {
 
     const AmajData = lib?.chords?.A[0]?.positions
     const Amaj = {
-        frets:  AmajData[0]?.frets,
+        frets: AmajData[0]?.frets,
         fingers: AmajData[0]?.fingers,
         name: 'A Major'
     }
@@ -55,26 +55,28 @@ const Home = () => {
 
     return (
         <Layout>
-
+            <div>
+                <span>Chords</span>
+            </div>
 
             <div className='m-20'>
-                <button 
-                onClick={() => navigate('/chords')}
-                className='btn'>Chords</button>
-                <button 
-                onClick={() => navigate('/saved')}
-                className='btn'>Saved</button>
-                <button 
-                onClick={() => navigate('/scales')}
-                className='btn'>Scales</button>
+                <button
+                    onClick={() => navigate('/chords')}
+                    className='btn'>Chords</button>
+                <button
+                    onClick={() => navigate('/saved')}
+                    className='btn'>Saved</button>
+                <button
+                    onClick={() => navigate('/scales')}
+                    className='btn'>Scales</button>
             </div>
 
             <div>
 
-                                <Chord
-                                    chord={Amaj}
-                                    instrument={instrument}
-                                />
+                <Chord
+                    chord={Amaj}
+                    instrument={instrument}
+                />
             </div>
 
             {/* <div className='flex m-20'>

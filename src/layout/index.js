@@ -83,7 +83,7 @@ const Layout = (props) => {
                         <a onClick={() => navigate('/')}>Home</a>
                     </li>
                     <li>
-                        <a onClick={() => navigate('/chords')}>Chords</a>
+                        <a onClick={() => navigate('/chords')}>Chord library</a>
                     </li>
                     <li>
                         <a onClick={() => navigate('/saved')}>Saved</a>

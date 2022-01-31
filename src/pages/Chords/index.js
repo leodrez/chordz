@@ -10,8 +10,6 @@ const Chords = () => {
     const [data] = useState(dataSource)
     const [keys] = useState(dataSource?.keys)
 
-    console.log('Data: ', data)
-
     const navigate = useNavigate()
 
 
@@ -21,10 +19,10 @@ const Chords = () => {
 
         switch (parsedKey) {
             case 'C#':
-                parsedKey = 'Db' 
+                parsedKey = 'Csharp' 
                 break;
             case 'F#':
-                parsedKey = 'Gb' 
+                parsedKey = 'Fsharp' 
                 break;
         }
 

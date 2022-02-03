@@ -44,7 +44,7 @@ const ChordById = () => {
                         data && data?.length > 0 && data?.map((chord, i) => (
                             <a
                                 onClick={() => renderChord(chord?.suffix)}
-                                // href="#detail"
+                                href="#detail"
                                 key={i} className='link link-primary link-hover font-bold capitalize text-lg lg:text-xl'>
                                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                     <span> {chord?.suffix} </span>

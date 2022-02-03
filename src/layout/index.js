@@ -13,7 +13,6 @@ const Layout = (props) => {
 
             <div className="drawer-content p-0 m-0">
 
-
                 <div className="bg-neutral mb-10">
                     <div className="navbar mb-2 text-neutral-content container mx-auto">
 

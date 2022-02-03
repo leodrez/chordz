@@ -25,7 +25,6 @@ const ChordById = () => {
 
         const filteredChord = data.filter(d => d.suffix === suffix)
         setSelected(filteredChord[0])
-
     }
 
     const instrument = useGuitar()

@@ -33,18 +33,18 @@ const ChordById = () => {
         <Layout>
 
             <div className='mb-10 rounded-lg'>
-                <div className='mb-8' style={{ marginBottom: -70 }}>
+                <div className='mb-8' style={{ marginBottom: -60 }}>
                     <span
-                        className='font-extrabold'
-                        style={{ fontSize: 200, lineHeight: 1 }}> {chordId} </span>
+                        className='font-extrabold text-8xl lg:text-9xl'
+                        style={{ lineHeight: 1 }}> {chordId} </span>
                 </div>
 
-                <div className='grid grid-cols-3 lg:grid-cols-10 gap-6 bg-gray-100 p-10 pt-20' >
+                <div className='grid grid-cols-3 lg:grid-cols-10 gap-6 bg-gray-100 p-10 pt-20' style={{ width: '100%'}} id="suffixContainer">
                     {
                         data && data?.length > 0 && data?.map((chord, i) => (
                             <a
                                 onClick={() => renderChord(chord?.suffix)}
-                                href="#detail"
+                                // href="#detail"
                                 key={i} className='link link-primary link-hover font-bold capitalize text-lg lg:text-xl'>
                                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                     <span> {chord?.suffix} </span>

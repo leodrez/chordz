@@ -8,7 +8,7 @@ const Layout = (props) => {
     const navigate = useNavigate()
 
     return (
-        <div className="shadow drawer h-screen">
+        <div className="shadow drawer h-screen mb-20">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
 
             <div className="drawer-content p-0 m-0">

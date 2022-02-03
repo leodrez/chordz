@@ -40,24 +40,24 @@ const ChordById = () => {
                         style={{ fontSize: 200, lineHeight: 1 }}> {chordId} </span>
                 </div>
 
-                <div className='grid grid-cols-10 gap-6 bg-gray-100 p-10' style={{ paddingTop: 120 }}>
+                <div className='grid grid-cols-3 lg:grid-cols-10 gap-6 bg-gray-100 p-10 pt-20' >
                     {
                         data && data?.length > 0 && data?.map((chord, i) => (
-                            <div
+                            <a
                                 onClick={() => renderChord(chord?.suffix)}
-                                key={i} className='link link-primary link-hover font-bold capitalize text-xl'>
+                                href="#detail"
+                                key={i} className='link link-primary link-hover font-bold capitalize text-lg lg:text-xl'>
                                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                     <span> {chord?.suffix} </span>
                                 </div>
-                            </div>
+                            </a>
                         ))
                     }
-
                 </div>
             </div>
 
 
-            <div className='grid grid-cols-4 gap-4'>
+            <div className='grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10' id="detail">
                 {
                     selected && selected?.positions && selected?.positions?.length > 0 &&
                     selected?.positions?.map((p, i) => (

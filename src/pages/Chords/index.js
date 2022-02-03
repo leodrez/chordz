@@ -39,14 +39,14 @@ const Chords = () => {
             </div>
 
             <div>
-                <div className="grid grid-cols-4 gap-4">
+                <div className="grid grid-cols-3 lg:grid-cols-4 gap-4">
                     {
                         keys && keys?.length > 0 && keys.map((key, i) => (
                             <div
                                 onClick={() => navigateToKey(key)}
                                 className="card shadow-lg text-primary hover:bg-gray-500 hover:text-white">
                                 <div className="card-body flex items-center content-center">
-                                    <span className='text-9xl font-black' key={i}>{key}</span>
+                                    <span className='text-5xl lg:text-9xl font-black' key={i}>{key}</span>
                                 </div>
                             </div>
                         ))

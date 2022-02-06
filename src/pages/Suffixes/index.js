@@ -2,11 +2,9 @@ import { useNavigate } from "react-router-dom"
 import { useState } from "react/cjs/react.development"
 import Layout from "../../layout"
 
-import dataSource from '../../lib/guitar.json'
+import data from '../../lib/guitar.json'
 
 const Suffixes = () => {
-
-    const [data] = useState(dataSource)
 
     const navigate = useNavigate()
 

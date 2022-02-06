@@ -1,5 +1,5 @@
 import Chord from "@tombatossals/react-chords/lib/Chord"
-import { useLocation, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react/cjs/react.development"
 import Layout from "../../../layout"
 import allChordsBySuffix from "../../../lib/allChordsBySuffix"
@@ -30,7 +30,6 @@ const Suffix = () => {
         setData(flatArray)
     }
 
-    console.log("DATA: ", data, 'selected: ', selected)
 
     return (
         <Layout>

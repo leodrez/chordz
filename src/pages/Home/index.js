@@ -17,6 +17,10 @@ const Home = () => {
             <button
                 onClick={() => navigate('/chords')}
                 className='btn'>Chord library</button>
+
+            <button
+                onClick={() => navigate('/suffixes')}
+                className='btn'>Chords By Suffixes</button>
             {/* <button
                     disabled
                     onClick={() => navigate('/saved')}

@@ -5,6 +5,8 @@ import Saved from './pages/Saved';
 import Scales from './pages/Scales';
 import Chords from './pages/Chords';
 import Chord from './pages/Chord';
+import Suffix from './pages/Suffixes/Suffix';
+import Suffixes from './pages/Suffixes';
 
 function App() {
 
@@ -39,6 +41,19 @@ function App() {
         exact
         element={<Saved />}
       />
+
+      <Route
+        path="/suffixes"
+        exact
+        element={<Suffixes />}
+      />
+
+      <Route
+        path="/suffixes/:suffix"
+        exact
+        element={<Suffix />}
+      />
+
 
     </Routes>
 

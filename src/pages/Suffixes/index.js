@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom"
-import { useState } from "react/cjs/react.development"
 import Layout from "../../layout"
 
 import data from '../../lib/guitar.json'

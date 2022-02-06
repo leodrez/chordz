@@ -35,7 +35,7 @@ const ChordById = () => {
             <div className='mb-10 rounded-lg'>
                 <div className='mb-8' style={{ marginBottom: -60 }}>
                     <span
-                        className='font-extrabold text-8xl lg:text-9xl'
+                        className='font-extrabold text-8xl lg:text-9xl dark:text-rose-500'
                         style={{ lineHeight: 1 }}> {chordId} </span>
                 </div>
 
@@ -60,9 +60,9 @@ const ChordById = () => {
                 {
                     selected && selected?.positions && selected?.positions?.length > 0 &&
                     selected?.positions?.map((p, i) => (
-                        <div>
+                        <div className=' bg-gray-100 p-4'>
 
-                            <span>Position: {i + 1}</span>
+                            <span className='text-black'>Position: {i + 1}</span>
 
                             <Chord
                                 chord={{

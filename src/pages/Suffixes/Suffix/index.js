@@ -60,9 +60,9 @@ const Suffix = () => {
                 {
                     selected && selected?.positions && selected?.positions?.length > 0 &&
                     selected?.positions?.map((p, i) => (
-                        <div>
+                        <div className=" bg-gray-100 p-4">
 
-                            <span>Position: {i + 1}</span>
+                            <span className="text-black">Position: {i + 1}</span>
 
                             <Chord
                                 chord={{

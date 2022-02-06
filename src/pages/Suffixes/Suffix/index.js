@@ -1,6 +1,6 @@
 import Chord from "@tombatossals/react-chords/lib/Chord"
 import { useParams } from "react-router-dom"
-import { useEffect, useState } from "react/cjs/react.development"
+import { useEffect, useState } from "react"
 import Layout from "../../../layout"
 import allChordsBySuffix from "../../../lib/allChordsBySuffix"
 import dataSource from '../../../lib/guitar.json'

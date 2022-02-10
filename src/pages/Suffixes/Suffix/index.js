@@ -41,7 +41,7 @@ const Suffix = () => {
                     <span className="text-7xl capitalize"> {suffix} </span>
                 </div>
 
-                <div className="grid grid-cols-12 gap-4 mb-8">
+                <div className="grid grid-cols-6 lg:grid-cols-12 gap-4 mb-8">
                     {
                         data && data?.length > 0 &&
                         data.map((c, i) => (
@@ -60,9 +60,12 @@ const Suffix = () => {
                 {
                     selected && selected?.positions && selected?.positions?.length > 0 &&
                     selected?.positions?.map((p, i) => (
-                        <div className=" bg-gray-100 p-4">
-
-                            <span className="text-black">Position: {i + 1}</span>
+                        <div className="bg-gray-100 p-4">
+                            <div>
+                                <span className='text-black'>Position: {i + 1}</span>
+                                <br />
+                                <span className='text-black'>Base fret: {p?.baseFret}</span>
+                            </div>
 
                             <Chord
                                 chord={{

@@ -11,6 +11,8 @@ const Home = () => {
 
     let navigate = useNavigate();
 
+    console.log('DATA: ', data)
+
     return (
         <Layout>
 

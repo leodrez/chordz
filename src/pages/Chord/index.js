@@ -39,7 +39,7 @@ const ChordById = () => {
                         style={{ lineHeight: 1 }}> {chordId} </span>
                 </div>
 
-                <div className='grid grid-cols-3 lg:grid-cols-10 gap-6 bg-gray-100 p-10 pt-20' style={{ width: '100%'}} id="suffixContainer">
+                <div className='grid grid-cols-3 lg:grid-cols-10 gap-6 bg-gray-100 p-10 pt-20' style={{ width: '100%' }} id="suffixContainer">
                     {
                         data && data?.length > 0 && data?.map((chord, i) => (
                             <a
@@ -62,7 +62,11 @@ const ChordById = () => {
                     selected?.positions?.map((p, i) => (
                         <div className=' bg-gray-100 p-4'>
 
-                            <span className='text-black'>Position: {i + 1}</span>
+                            <div>
+                                <span className='text-black'>Position: {i + 1}</span>
+                                <br />
+                                <span className='text-black'>Base fret: {p?.baseFret}</span>
+                            </div>
 
                             <Chord
                                 chord={{
